@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Luca Curto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+        
+        <div id="div_1" style="font-size: 35px;"> titolo assente</div>
+        <div>secondo div</div>
+        
+     user: <input id="input_testo" type="text" />
+        
+        
+        
+         
+        
+        
+       
+        
+       <button onclick="impostaTitolo()">Imposta il titolo...</button>
+       <button>registrati</button>
+    
+       
+    </body>
+</html>
+
+
+
+<script >
+ 
+ 
+ function impostaTitolo(){
+ // recupero oggetto input testo
+ var mioObjTesto = document.getElementById("input_testo");
+ // assegno alla variabile txin il contenuto dell'input ovvero l'attributovalue dall'oggetto
+ var txIn = mioObjTesto.value;
+//recupero oggetto finale per il testo da vedere div_1
+var mioDiv1 = document.getElementById("div_1");
+//assegno al contenuto del dv1 innerHTML la frase che c'è in txin
+mioDiv1.innerHTML = txIn;
+mioObjTesto.value=""; 
+
+
+    }
+ 
+ 
+ 
+        
+ </script>
+        
+     
